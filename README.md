@@ -7,6 +7,20 @@
 
 This is an extract of the Readability class from this [full-text-rss](https://github.com/Dither/full-text-rss) fork. It can be defined as a better version of the original [php-readability](https://bitbucket.org/fivefilters/php-readability).
 
+## Install
+
+Add "Readability\\": "Readability/", to composer.json autoload block
+```JSON
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Readability\\": "Readability/",
+            "Database\\Factories\\": "database/factories/",
+            "Database\\Seeders\\": "database/seeders/"
+        }
+    },
+```
+and exec ```composer dump-autoload```
 ## Differences
 
 The default php-readability lib is really old and needs to be improved. I found a great fork of full-text-rss from [@Dither](https://github.com/Dither/full-text-rss) which improve the Readability class.
